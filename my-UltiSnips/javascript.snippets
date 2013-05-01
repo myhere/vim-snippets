@@ -67,4 +67,21 @@ snippet timeout "setTimeout function"
 setTimeout(function() {$0}${2:}, ${1:10});
 endsnippet
 
+snippet author "author" !b
+/**
+ * @author: ${1:myhere.2009@gmail.com}
+ */
+endsnippet
+
+
+snippet km "Kissy module definition" !b
+KISSY.add(${1}function(S${4}) {
+  ${5}
+}, {
+  attach: ${2:false},
+  requires: [${3}]
+});
+
+endsnippet
+
 # vim:ft=snippets:
