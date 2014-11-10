@@ -28,26 +28,22 @@ snippet use
 	use ${1:Foo\Bar\Baz};
 	${2}
 snippet	c
-	class ${1:`Filename()`}
-	{
+	class ${1:`Filename()`} {
 		${2}
 	}
 snippet i
-	interface ${1:`Filename()`}
-	{
+	interface ${1:`Filename()`} {
 		${2}
 	}
 snippet t.
 	$this->${1}
 snippet f
-	function ${1:foo}(${2:array }${3:$bar})
-	{
+	function ${1:foo}(${2:array }${3:$bar}) {
 		${4}
 	}
 # method
 snippet m
-	${1:protected} function ${2:foo}()
-	{
+	${1:protected} function ${2:foo}() {
 		${3}
 	}
 # setter method
@@ -223,14 +219,12 @@ snippet class
 	/**
 	 * ${1}
 	 */
-	class ${2:`Filename()`}
-	{
+	class ${2:`Filename()`} {
 		${3}
 		/**
 		 * ${4}
 		 */
-		${5:public} function ${6:__construct}(${7:argument})
-		{
+		${5:public} function ${6:__construct}(${7:argument}) {
 			${8:// code...}
 		}
 	}
